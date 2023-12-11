@@ -1,0 +1,31 @@
+name,setting,
+embedding_dir,dataset/embedding/ori_text_img_path/ori_text_img_path.npz,
+# directory to the embedding dataset, see files in 'dataset/embedding'
+ckpt,try,
+# ckpt: the name of the run, affecting the saved model name
+use_wandb,False,
+# use_wandb: whether to use wandb
+gpu,4
+# which gpu device
+rand_seed,0,
+# random seed
+text_modality,ori
+module,torch
+# use the original text for training
+method,bert
+# which method
+dataset,small
+# all: using all the training set; small: using only the last 10000 training samples
+batch_size,32
+learning_rate,1e-5
+weight_decay,1e-2
+warmup_steps,0
+epochs,10
+max_sequence_length,500
+
+
+
+
+
+
+

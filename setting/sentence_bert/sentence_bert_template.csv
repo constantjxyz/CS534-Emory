@@ -1,0 +1,31 @@
+name,setting,
+embedding_dir,dataset/embedding/sentence_bert/sentence_bert_768.npz,
+# directory to the embedding dataset, see files in 'dataset/embedding'
+ckpt,try,
+# ckpt: the name of the run, affecting the saved model name
+use_wandb,False,
+# use_wandb: whether to use wandb
+gpu,4
+# which gpu device
+rand_seed,0,
+# random seed
+text_modality,embedding
+module,torch
+# use the original text for training
+method,sentence_bert_frozen
+# which method
+dataset,all
+# all: using all the training set; small: using only the last 10000 training samples
+batch_size,16
+learning_rate,1e-3
+weight_decay,1e-1
+warmup_steps,0
+epochs,50
+max_sequence_length,500
+
+
+
+
+
+
+

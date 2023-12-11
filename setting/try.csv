@@ -1,0 +1,12 @@
+name,setting,
+embedding_dir,dataset/embedding/bag_of_word_keyword/bag_of_word_keyword.npz,
+model,
+ckpt,try,
+use_wandb,False,
+gpu,-1,
+rand_seed,0,
+method,svm
+
+
+
+
