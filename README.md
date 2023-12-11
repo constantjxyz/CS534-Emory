@@ -4,3 +4,10 @@
  Group 17: Yuzhang Xie, Siyu Li
 
  Title: Online Hate Speech Detection
+
+# Dataset
+ Kaggle link: https://www.kaggle.com/datasets/victorcallejasf/multimodal-hate-speech
+
+# File explanation
+ 
+ 
