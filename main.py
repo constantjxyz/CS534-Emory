@@ -15,13 +15,19 @@ print("Current Working Directory:", os.getcwd())
 
 # set parameters from csv
 parser = argparse.ArgumentParser()
-# parser.add_argument('--setting_dir', type=str, default='./svm_template.csv')
-# parser.add_argument('--setting_dir', type=str, default='./adaboost_template.csv')
-# parser.add_argument('--setting_dir', type=str, default='./decision_tree_template.csv')
-# parser.add_argument('--setting_dir', type=str, default='./logistic_regression_template.csv')
-# parser.add_argument('--setting_dir', type=str, default='./naive_bayes_template.csv')
-# parser.add_argument('--setting_dir', type=str, default='./random_forest_template.csv')
-parser.add_argument('--setting_dir', type=str, default='./mlp_template.csv')
+# parser.add_argument('--setting_dir', type=str, default='./setting/svm/svm_template.csv')
+# parser.add_argument('--setting_dir', type=str, default='./setting/adaboost/adaboost_template.csv')
+# parser.add_argument('--setting_dir', type=str, default='./setting/decision_tree/decision_tree_template.csv')
+# parser.add_argument('--setting_dir', type=str, default='./setting/logistic_regression/logistic_regression_template.csv')
+# parser.add_argument('--setting_dir', type=str, default='./setting/naive_bayes/naive_bayes_template.csv')
+# parser.add_argument('--setting_dir', type=str, default='./setting/random_forest/random_forest_template.csv')
+parser.add_argument('--setting_dir', type=str, default='./setting/mlp/mlp_template.csv')
+# parser.add_argument('--setting_dir', type=str, default='./setting/rnn/rnn_template.csv')
+# parser.add_argument('--setting_dir', type=str, default='./setting/bert/bert_template.csv.csv')
+# parser.add_argument('--setting_dir', type=str, default='./setting/clip/clip_template.csv')
+# parser.add_argument('--setting_dir', type=str, default='./setting/lstm/lstm_template.csv')
+# parser.add_argument('--setting_dir', type=str, default='./setting/sentence_bert/sentence_bert_template.csv.csv')
+
 args = parser.parse_args()
 params = get_param_dict(args.setting_dir)
 random_state = int(params['rand_seed'])
@@ -59,6 +65,21 @@ torch.cuda.manual_seed_all(random_state)
 logging.basicConfig(filename='program_output_mlp.log', 
                     level=logging.INFO, 
                     format='%(levelname)s:%(message)s')
+# logging.basicConfig(filename='program_output_rnn.log', 
+#                     level=logging.INFO, 
+#                     format='%(levelname)s:%(message)s')
+# logging.basicConfig(filename='program_output_bert.log', 
+#                     level=logging.INFO, 
+#                     format='%(levelname)s:%(message)s')
+# logging.basicConfig(filename='program_output_clip.log', 
+#                     level=logging.INFO, 
+#                     format='%(levelname)s:%(message)s')
+# logging.basicConfig(filename='program_output_lstm.log', 
+#                     level=logging.INFO, 
+#                     format='%(levelname)s:%(message)s')
+# logging.basicConfig(filename='program_output_sentence_bert.log', 
+#                     level=logging.INFO, 
+#                     format='%(levelname)s:%(message)s')
 
 # load the dataset
 def main():
