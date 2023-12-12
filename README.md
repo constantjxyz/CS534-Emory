@@ -13,7 +13,7 @@
 
  Python packages' versions: Specified in the "requirements.txt" file
 
-# File explanation
+# File Explanation
  "dataset" folder: This directory stores both the original dataset sourced from Kaggle and the generated embeddings. Due to their substantial size, the dataset files and the embeddings are not included in this repository. Additionally, the "create_dataset.py" file contains Python code responsible for reading the generated embeddings and preparing them for the training process.
 
  "docs" folder: Within this folder, you will find code files used for checking the dataset and generating embeddings, which are utilized before the actual training process.
