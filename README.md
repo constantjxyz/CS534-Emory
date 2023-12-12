@@ -11,7 +11,7 @@
 # Environment
  Python version: 3.8.10
 
- Python packages' version: Specified in the "requirements.txt" file
+ Python packages' versions: Specified in the "requirements.txt" file
 
 # File explanation
  "dataset" folder: This directory stores both the original dataset sourced from Kaggle and the generated embeddings. Due to their substantial size, the dataset files and the embeddings are not included in this repository. Additionally, the "create_dataset.py" file contains Python code responsible for reading the generated embeddings and preparing them for the training process.
