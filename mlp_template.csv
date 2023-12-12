@@ -1,0 +1,25 @@
+name,setting,
+embedding_dir,dataset/bag_of_word_fs_keyword.npz,
+# directory to the embedding dataset, see files in 'dataset'
+ckpt,try,
+# ckpt: the name of the run, affecting the saved model name
+use_wandb,False,
+# use_wandb: whether to use wandb
+gpu,-1,
+# which gpu device
+rand_seed,40,
+# random seed
+
+method,mlp
+# multi layer perceptron method
+dataset,all
+# all: using all the training set; small: using only the last 10000 training samples
+text_modality,embedding
+module,sklearn
+# multi layer perceptron hyperparameters
+mlp_hidden_layer1_sizes,20
+mlp_hidden_layer2_sizes,10
+mlp_activation,logistic
+mlp_solver,adam
+mlp_max_iter,10000
+mlp_learning_rate_init,0.01

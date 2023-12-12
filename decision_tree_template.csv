@@ -1,0 +1,22 @@
+name,setting,
+embedding_dir,dataset/bag_of_word_fs_keyword.npz,
+# directory to the embedding dataset, see files in 'dataset'
+ckpt,try,
+# ckpt: the name of the run, affecting the saved model name
+use_wandb,False,
+# use_wandb: whether to use wandb
+gpu,-1,
+# which gpu device
+rand_seed,30,
+# random seed
+
+method,decision_tree
+# decision tree method
+dataset,all
+# all: using all the training set; small: using only the last 10000 training samples
+text_modality,embedding
+module,sklearn
+# decision tree hyperparameters
+dt_max_depth,14
+dt_min_samples_split,15
+dt_min_samples_leaf,7
