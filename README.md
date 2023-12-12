@@ -10,6 +10,7 @@
 
 # Environment
  Python version: 3.8.10
+
  Python packages' version: Specified in the "requirements.txt" file
 
 # File explanation
@@ -21,7 +22,9 @@
 
  "setting" folder: This directory contains setting files pertinent to each training process.
 
-"main.py": The primary Python file responsible for initializing the training process.
+ "main.py" file: The primary Python file responsible for initializing the training process.
+ 
+ "requirements.txt" file: The text file summarizing the utilized Python packages' versions
 
 
  
